@@ -8,6 +8,7 @@ from PIL import Image
 from io import BytesIO
 
 #Load the dlib face detector and the facial landmarks predictor, shape_predictor_68_face_landmarks.dat file should be in same repo
+#https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat
 detector = dlib.get_frontal_face_detector()
 predictor_path = 'shape_predictor_68_face_landmarks.dat'
 predictor = dlib.shape_predictor(predictor_path)
